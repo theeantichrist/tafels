@@ -4,12 +4,12 @@
 # Ignore all Photoshop files
 *.psd
 
-# Ignore HTML files other than index.html (if you don't want to track them)
+# Ignore HTML files other than index.html 
 indexf.html
 les 4 html/
 les--4/
 
-# Ignore node_modules (if you're using Node.js)
+# Ignore node_modules 
 node_modules/
 
 # Ignore log files
@@ -18,7 +18,7 @@ node_modules/
 # Ignore temporary files
 *.swp
 
-# Ignore build directories (e.g., if you're using a bundler like Webpack)
+# Ignore build directories 
 dist/
 build/
 out/
