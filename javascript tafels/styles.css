@@ -1,0 +1,76 @@
+/* Center the body using flexbox */
+body {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    margin: 0;                
+    background-image: linear-gradient(315deg, #0015ff 0%, #ffc3a0 74%);
+    animation: gradientChange 10s ease infinite; 
+}
+
+/* Spinning animation for both text and image */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply spinning animation to the text */
+.spinning-text {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    text-align: center;
+    animation: spin 5s linear infinite; 
+    position: relative;
+    color: rgba(134, 40, 40, 0.217);  
+    text-shadow: 
+        2px 2px 0px rgba(255, 255, 255, 0.273),   
+        -2px -2px 0px rgb(0, 0, 0), 
+        4px -4px 0px rgba(255, 255, 255, 0.273),
+        -4px 4px 0px rgb(0, 0, 0), 
+        2px -4px 0px rgba(255, 255, 255, 0.273),
+        -2px 4px 0px rgb(0, 0, 0),   
+        4px 4px 0px rgba(255, 255, 255, 0.273),
+        -4px -4px 0px rgb(0, 0, 0);
+}
+
+/* Apply spinning animation to the image */
+.spinning-image {
+    width: 200px; /* Adjust the size of the image */
+    height: auto;
+    animation: spin 5s linear infinite; /* Same spinning animation as the text */
+}
+
+/* Gradient change animation with seamless transition */
+@keyframes gradientChange {
+    0% {
+        background-image: linear-gradient(315deg, rgb(4, 0, 237) 0%, #ff9a9a 74%);
+    }
+    25% {
+        background-image: linear-gradient(315deg, rgb(4, 0, 237) 0%, #ff8888 74%);
+    }
+    50% {
+        background-image: linear-gradient(315deg, rgb(4, 0, 237) 0%, #f58a8a 74%); 
+    }
+    75% {
+        background-image: linear-gradient(315deg, rgb(4, 0, 237) 0%, #ff7a7a 74%);
+    }
+    100% {
+        background-image: linear-gradient(315deg, rgb(4, 0, 237) 0%, #ff9a9a 74%); 
+    }
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .spinning-text {
+        font-size: 2rem; 
+    }
+
+    .spinning-image {
+        width: 150px; /* Adjust image size for smaller screens */
+    }
+}

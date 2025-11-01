@@ -1,0 +1,24 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore all Photoshop files
+*.psd
+
+# Ignore HTML files other than index.html (if you don't want to track them)
+indexf.html
+les 4 html/
+les--4/
+
+# Ignore node_modules (if you're using Node.js)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.swp
+
+# Ignore build directories (e.g., if you're using a bundler like Webpack)
+dist/
+build/
+out/
